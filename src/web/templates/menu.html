@@ -1,0 +1,294 @@
+{% extends "base.html" %}
+
+{% block title %}Menu — Big’s BBQ & Smokehouse{% endblock %}
+
+{% block content %}
+
+<section class="menu-hero">
+  <div class="menu-hero-overlay">
+    <div class="wrap">
+      <h2>Our Menu</h2>
+      <p class="sub">Slow smoked meats, classic sides, and house-made desserts.</p>
+    </div>
+  </div>
+</section>
+
+<main class="wrap results">
+
+  <div class="results-head">
+    <h3>BBQ Favorites</h3>
+    <p class="muted small">This is a portfolio demo page.</p>
+  </div>
+
+  <div class="grid" style="margin-top:1.5rem;">
+
+  <a href="{{ url_for('menu') }}?item=rodeo-steak" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/001-rodeo.png') }}"
+         alt="Rodeo Steak" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Rodeo Steak</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=baby-back-ribs" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/002-bigs-baby-backs.png') }}"
+         alt="Big’s Baby Back Ribs" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big’s Baby Back Ribs</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=big-luther" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/001-big-luther.png') }}"
+         alt="Big Luther Burger" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big Luther</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=big-back-deluxe" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/013-big-back-deluxe.png') }}"
+         alt="big-back-deluxe" class="menu-card-img" />
+    <div class="menu-card-content"><h4>The Big-Back Deluxe</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=po-boy" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/001-po-boy.png') }}"
+         alt="Big's Po' Boy" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big's Po' Boy</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=chicken-waffles" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/005-ch-and-waf.png') }}"
+         alt="Chicken and Waffles" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big’s Chicken &amp; Waffles</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=catfish" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/014-big-platter.png') }}"
+         alt="Big's Catfish Platter" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big's Catfish Platter</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=parmesan-fries" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/006-big-ol-basket.png') }}"
+         alt="Parmesan Fries" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Parmesan Fries</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=big-ol-shake" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/008-bigs-shake.jpg') }}"
+         alt="Big Ol’ Shake" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big Ol’ Shake</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=big-ol-sweetie" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/008-big-sweetie.png') }}"
+         alt="Big Ol’ Sweetie" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big Ol’ Sweetie</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=big-ol-peach" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/008-big-ol-peach.png') }}"
+         alt="Big Ol’ Peach" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big Ol’ Peach</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=chocolate-explosion" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/010-bigs-brownie-explosion.png') }}"
+         alt="Big Ol’ Explosion" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big Ol’ Explosion</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=bigs-cheesecake" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/002-bigs-cheesecake.png') }}"
+         alt="Big Ol’ Cheesecake" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big Ol’ Cheesecake</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=big-ol-slice" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/008-bigs-slice.png') }}"
+         alt="Pound Cake" class="menu-card-img" />
+    <div class="menu-card-content"><h4>Big Ol' Slice</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+  <a href="{{ url_for('menu') }}?item=cold-drinks" class="menu-card">
+    <img src="{{ url_for('static', filename='images/food-items/011-bigs-drinks-b.png') }}"
+         alt="Cold Drinks" class="menu-card-img" />
+    <div class="menu-card-content"><h4>POPS</h4></div>
+    <div class="menu-card-arrow">›</div>
+  </a>
+
+</div>
+    <!-- Repeat same structure for remaining items -->
+
+  </div>
+</main>
+
+<!-- Overlay -->
+<div class="item-overlay" id="itemOverlay" hidden>
+  <div class="item-overlay-card">
+
+    <button class="overlay-close" id="closeOverlay" type="button" aria-label="Close">✕</button>
+
+    <img id="overlayItemHeroImg" class="item-hero-img" alt="Menu item image" />
+
+    <h2 id="overlayItemTitle"></h2>
+
+    <p class="item-description" id="overlayItemDescription"></p>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const MENU_URL = "{{ url_for('menu') }}";
+
+const menuData = {
+    "rodeo-steak": {
+      title: "Rodeo Steak",
+      img: "{{ url_for('static', filename='images/food-items/001-rodeo.png') }}",
+      desc: "The smoky and savory “Rodeo Steak” is the result of a harmonious symphony of bold Southern flavor blend spices, crowned with a zesty mix of caramelized onions and crispy bacon bits and our proprietary “Big’s BBQ” sauce that will make your mouth water"
+    },
+    "baby-back-ribs": {
+      title: "Big’s Baby Back Ribs",
+      img: "{{ url_for('static', filename='images/food-items/002-bigs-baby-backs.png') }}",
+      desc: "Introducing our mouthwatering Baby Back Ribs. Served with your choice of tangy BBQ sauce—whether it's the traditional sweet and sticky, or a spicy twist for those who like a kick—these Baby Back Ribs will transport you straight to BBQ heaven. Bring the whole family and indulge in this finger-licking delight, because great food and unforgettable moments are what we're all about! "
+    },
+
+    "big-luther": {
+      title: "Big Luther",
+      img: "{{ url_for('static', filename='images/food-items/001-big-luther.png') }}",
+      desc: "Every bite of The Luther is a symphony of savory goodness that will have you craving more. Bring your appetite and prepare to experience a burger that transcends ordinary expectations. Come join us and savor The Luther—your taste buds will thank you!"
+
+    },
+
+    "big-ol-shake": {
+      title: "Big Ol' Shake",
+      img: "{{ url_for('static', filename='images/food-items/008-bigs-shake.jpg') }}",
+      desc: "A rich, layered chocolate milkshake served in a tall glass, topped with whipped cream and drizzled generously with chocolate syrup. The shake sits on a rustic wooden surface, with cookies and greenery softly blurred in the background, giving it a warm, indulgent Southern dessert vibe."
+    },
+
+    "catfish": {
+      title: "Big's Catfish Platter",
+      img: "{{ url_for('static', filename='images/food-items/014-big-platter.png') }}",
+      desc: "Five crispy cornmeal-crusted catfish filets served golden and flaky with coleslaw, hushpuppies, lemon wedges, and house remoulade."
+    },
+
+    "parmesan-fries": {
+      title: "Parmesan Fries",
+      img: "{{ url_for('static', filename='images/food-items/006-big-ol-basket.png') }}",
+      desc: "These golden and crispy fries are generously sprinkled with a blend of savory grated Parmesan cheese and aromatic herbs, creating a delightful symphony of tastes in every bite."
+    },
+
+    "big-back-deluxe": {
+      title: "The Big-Back Deluxe",
+      img: "{{ url_for('static', filename='images/food-items/013-big-back-deluxe.png') }}",
+      desc: "An extreme Southern-style stacked burger combining five flame-seared beef patties, brisket, bacon, mac and cheese, and Big Mad sauce."
+    },
+
+    "big-ol-peach": {
+      title: "Big Ol' Peach",
+      img: "{{ url_for('static', filename='images/food-items/008-big-ol-peach.png') }}",
+      desc: "Layers of warm cinnamon peaches, buttery crumble, and smooth vanilla cream stacked tall and finished with whipped topping and a caramel drizzle."
+    },
+
+    "big-ol-sweetie": {
+      title: "Big Ol' Sweetie",
+      img: "{{ url_for('static', filename='images/food-items/008-big-sweetie.png') }}",
+      desc: "Spiced sweet potato cream layered with crushed pie crust, vanilla cream, and finished with whipped topping and a dusting of cinnamon."
+    },
+
+    "big-ol-peach": {
+      title: "Big Ol' Peach",
+      img: "{{ url_for('static', filename='images/food-items/008-big-ol-peach.png') }}",
+      desc: "Layers of warm cinnamon peaches, buttery crumble, and smooth vanilla cream stacked tall and finished with whipped topping and a caramel drizzle."
+    },
+
+    "chocolate-explosion": {
+      title: "Big Ol' Explosion",
+      img: "{{ url_for('static', filename='images/food-items/010-bigs-brownie-explosion.png') }}",
+      desc: "Fudgy chocolate brownie squares topped with vanilla ice cream, warm caramel, chocolate drizzle, and toasted almond slices. Served hot and finished indulgent."
+    },
+
+    "bigs-cheesecake": {
+      title: "Big Ol' Cheesecake",
+      img: "{{ url_for('static', filename='images/food-items/002-bigs-cheesecake.png') }}",
+      desc: "Rich, creamy New York-style cheesecake topped with fresh sliced strawberries and a glossy strawberry glaze. Finished with white chocolate curls for a smooth, sweet finish."
+    },
+
+    "big-ol-slice": {
+      title: "Big Ol' Slice",
+      img: "{{ url_for('static', filename='images/food-items/008-bigs-slice.png') }}",
+      desc: "Moist, buttery pound cake topped with a thick vanilla glaze that drips over every slice. Simple, rich, and Southern to the core."
+    },
+
+    "cold-drinks": {
+      title: "POPS",
+      img: "{{ url_for('static', filename='images/food-items/011-bigs-drinks-b.png') }}",
+      desc: "An ice-cold selection of classic and throwback sodas, served chilled and ready to pair with any Big’s meal. You ain't gonna find these nowhere else!"
+    },
+
+    "po-boy": {
+      title: "Big's Po' Boy",
+      img: "{{ url_for('static', filename='images/food-items/001-po-boy.png') }}",
+      desc: "Crispy golden fried shrimp piled high on a toasted hoagie roll with fresh shredded lettuce, sliced tomatoes, pickles, and slow-smoked brisket. Finished with a drizzle of house-made remoulade for a bold Southern bite in every layer."
+    },
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const item = params.get("item");
+
+  const overlay = document.getElementById("itemOverlay");
+  const closeBtn = document.getElementById("closeOverlay");
+
+  const heroImg = document.getElementById("overlayItemHeroImg");
+  const titleEl = document.getElementById("overlayItemTitle");
+  const descEl = document.getElementById("overlayItemDescription");
+
+  function openOverlay(data){
+    titleEl.textContent = data.title;
+    heroImg.src = data.img;
+    heroImg.alt = data.title;
+    descEl.textContent = data.desc;
+
+    overlay.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeOverlay(){
+    overlay.hidden = true;
+    document.body.style.overflow = "auto";
+    history.pushState({}, "", MENU_URL);
+  }
+
+  if(item && menuData[item]){
+    openOverlay(menuData[item]);
+  }
+
+  closeBtn.addEventListener("click", closeOverlay);
+
+  overlay.addEventListener("click", (e) => {
+    if(e.target === overlay) closeOverlay();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if(e.key === "Escape" && !overlay.hidden) closeOverlay();
+  });
+
+});
+</script>
+{% endblock %}
+
