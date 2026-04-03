@@ -1,0 +1,65 @@
+<!-- templates/base.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{% block title %}Big’s BBQ{% endblock %}</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+  {% block header %}{% endblock %}
+
+  <header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <img src="{{ url_for('static', filename='images/logo/bigs-bbq-emblem-yell.png') }}"
+           alt="Big’s BBQ & Smokehouse logo"
+           class="logo"/>
+    </div>
+
+    <nav aria-label="Primary" class="primary-nav">
+  <a href="{{ url_for('home') }}"
+     {% if request.endpoint == 'home' %}aria-current="page"{% endif %}>
+     Careers
+  </a>
+
+  <a href="{{ url_for('about') }}"
+     {% if request.endpoint == 'about' %}aria-current="page"{% endif %}>
+     About
+  </a>
+
+  <a href="{{ url_for('menu') }}"
+     {% if request.endpoint == 'menu' %}aria-current="page"{% endif %}>
+     Menu
+  </a>
+
+  <a href="{{ url_for('missions') }}"
+     {% if request.endpoint == 'missions' %}aria-current="page"{% endif %}>
+     Mission
+  </a>
+</nav>
+  </div>
+</header>
+
+  <main id="main">
+    {% block content %}{% endblock %}
+  </main>
+
+  {% block footer %}{% endblock %}
+
+  <!-- 🔥 GLOBAL CHATBOT (move yours here) -->
+  {% include "components/chatbot.html" %}
+
+  <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/security-logger.js') }}"></script>
+
+  {% block scripts %}{% endblock %}
+
+
+
+
+</body>
+</html>

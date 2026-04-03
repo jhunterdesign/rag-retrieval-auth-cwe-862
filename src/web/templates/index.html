@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Careers at Big’s BBQ{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow caps">WE ARE WHAT’S GOOD</p>
+    <h2 class="display">Careers in Metro Atlanta</h2>
+    <p class="sub">Find roles in Atlanta, Decatur, and Marietta.</p>
+
+    <!-- 🔥 SEARCH / FILTER RESTORED -->
+    <form id="searchForm"
+          class="search"
+          role="search"
+          aria-label="Job search">
+
+      <div class="field">
+        <label for="role">Role</label>
+        <select id="role" name="role">
+          <option value="">Any role</option>
+          <option value="Crew">Crew</option>
+          <option value="Line Cook">Line Cook</option>
+          <option value="Shift Manager">Shift Manager</option>
+          <option value="Cleaner">Cleaner</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="zip">City / ZIP</label>
+        <input id="zip"
+               name="zip"
+               inputmode="numeric"
+               pattern="[0-9]*"
+               placeholder="30303, Decatur, Marietta" />
+      </div>
+
+      <div class="field">
+        <label for="type">Availability</label>
+        <select id="type" name="type">
+          <option value="">Any</option>
+          <option value="Full-time">Full-time</option>
+          <option value="Part-time">Part-time</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Search Jobs</button>
+
+    </form>
+  </div>
+</section>
+
+<section class="wrap results">
+
+  <div class="results-head">
+    <h3>Available Positions</h3>
+    <p class="muted small">
+      This is a portfolio demo. Do not enter real personal information.
+    </p>
+  </div>
+
+  <div id="jobGrid" class="grid" role="list"></div>
+
+  <template id="jobCardTemplate">
+    <article class="card" role="listitem">
+      <img class="thumb" alt="">
+      <div class="card-body">
+        <h4 class="job-title"></h4>
+        <ul class="meta">
+          <li class="job-location"></li>
+          <li class="job-type"></li>
+          <li class="job-pay"></li>
+        </ul>
+        <p class="job-blurb"></p>
+        <div class="actions">
+          <button class="btn-secondary view-details">View details</button>
+          <button class="btn apply-btn">Apply now</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+</section>
+
+{% endblock %}
