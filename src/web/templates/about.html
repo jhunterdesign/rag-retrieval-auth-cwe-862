@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}About — Big’s BBQ & Smokehouse{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="about-hero-overlay">
+    <div class="wrap">
+      <h1>Our Story</h1>
+      <p class="sub">From a backyard smoke pit to serving Metro Atlanta.</p>
+    </div>
+  </div>
+</section>
+
+<main class="wrap about-content">
+
+  <section class="about-section">
+    <h2>How It All Began</h2>
+    <p>
+      Big’s BBQ started behind a small house in Marietta, Georgia with nothing
+      more than a homemade smoker, a family recipe, and neighbors who kept
+      showing up asking, “What you cooking today?”
+    </p>
+    <p>
+      What began as weekend cookouts for friends and church gatherings slowly
+      turned into something bigger. Word spread. Plates multiplied. And before
+      long, the backyard smoke pit became the heart of a community tradition.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2>Meet Big</h2>
+    <p>
+      Known simply as “Big” to friends and family, the founder of Big’s BBQ
+      learned the craft from his father and grandfather, who believed that good
+      barbecue takes time, patience, and love.
+    </p>
+    <p>
+      Big never rushed the process. Meats were smoked low and slow. Sauces were
+      made from scratch. And every plate was served like it was going to a
+      family member.
+    </p>
+  </section>
+
+  <section class="about-feature">
+    <div class="wrap about-feature-inner">
+      <div class="about-feature-image">
+        <img 
+          src="{{ url_for('static', filename='images/you-go-gurl.png') }}"
+          alt="Big and team members at Big’s BBQ Smokehouse"
+        />
+      </div>
+
+      <div class="about-feature-content">
+        <h2>The People Behind the Smoke</h2>
+        <p>
+          At Big’s BBQ, it’s more than recipes — it’s people. From the pit to the
+          pastry counter, every team member carries forward the tradition of
+          hospitality, pride, and flavor.
+        </p>
+        <p>
+          We don’t just serve plates. We serve moments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>Why BBQ?</h2>
+    <p>
+      For Big, barbecue wasn’t just food — it was fellowship. It was the reason
+      people gathered, laughed, and stayed a little longer.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2>From Backyard to Metro Atlanta</h2>
+    <p>
+      Today, Big’s BBQ & Smokehouse proudly serves guests from Atlanta, Decatur,
+      and Marietta. While the setting has grown, the method hasn’t changed.
+    </p>
+    <p>
+      Slow. Careful. And made to be shared.
+    </p>
+  </section>
+
+</main>
+
+{% endblock %}

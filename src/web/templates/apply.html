@@ -1,0 +1,57 @@
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/logo/favicon.png">
+<link rel="stylesheet" href="styles.css">
+
+
+<section class="apply-section wrap">
+  <h2>Quick Apply</h2>
+  <p class="muted">Complete the form below. (Demo only)</p>
+
+  <form id="applyForm" class="apply-form">
+    <div class="field">
+      <label>First Name</label>
+      <input name="firstName" required>
+    </div>
+
+    <div class="field">
+      <label>Last Name</label>
+      <input name="lastName" required>
+    </div>
+
+    <div class="field">
+      <label>Email</label>
+      <input name="email" type="email" required>
+    </div>
+
+    <div class="field">
+      <label>Phone</label>
+      <input name="phone">
+    </div>
+
+    <div class="field">
+      <label>Why do you want to work here?</label>
+      <textarea name="reason"></textarea>
+    </div>
+
+    <div class="field">
+      <label>Availability Notes</label>
+      <textarea name="availability"></textarea>
+    </div>
+
+    <button class="btn" type="submit">Submit Application</button>
+
+
+    <!--SUBMIT RESUME-->
+
+    <div class="field">
+  <label>Upload Resume (PDF, DOCX)</label>
+  <input type="file" name="resume" id="resumeUpload">
+</div>
+
+  </form>
+  <script src="app.js" defer></script>
+<script src="js/security-logger.js"></script>
+
+</section>
