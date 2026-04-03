@@ -1,0 +1,54 @@
+<!-- Chat Toggle Button -->
+<button id="chatToggle"
+        class="chat-toggle"
+        aria-haspopup="dialog"
+        aria-controls="chatDrawer"
+        aria-expanded="false"
+        title="Chat with Biggie">
+  Chat with Biggie
+</button>
+
+<!-- Chat Drawer -->
+<aside id="chatDrawer"
+       class="chat-drawer"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="chatTitle"
+       aria-hidden="true">
+
+  <header class="chat-header mchire-header">
+    <div class="mchire-id">
+      <img src="{{ url_for('static', filename='images/brand/bigs-avatar.png') }}"
+           class="mchire-avatar" />
+      <span class="mchire-name">Biggie</span>
+    </div>
+
+    <img src="{{ url_for('static', filename='images/logo/bigs-bbq-emblem-001.png') }}"
+         class="mchire-logo"
+         alt="Big's BBQ logo" />
+
+    <button id="chatClose" class="icon-btn">×</button>
+  </header>
+
+  <div id="chatLog"
+       class="chat-log"
+       role="log"
+       aria-live="polite"
+       aria-relevant="additions"></div>
+
+  <form id="chatForm" class="chat-form" autocomplete="off">
+    <label class="sr-only" for="chatInput">Type a message</label>
+    <input id="chatInput"
+           name="message"
+           placeholder="Ask about roles, shifts, or schedule a mock interview…" />
+    <button class="btn" type="submit">Send</button>
+  </form>
+
+  <div class="chat-notice small">
+    Session ID: <strong id="sessionId"></strong>
+  </div>
+
+  <div class="chat-notice small">
+    Demo only — do not share sensitive data.
+  </div>
+</aside>
